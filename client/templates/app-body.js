@@ -1,3 +1,7 @@
+import '../../imports/lib/collections';
+import '../../imports/lib/router';
+import '../../imports/ui/lib/jquery.touchwipe';
+
 var MENU_KEY = 'menuOpen';
 Session.setDefault(MENU_KEY, false);
 

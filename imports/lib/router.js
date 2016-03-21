@@ -1,3 +1,5 @@
+import './collections.js';
+
 Router.configure({
   // we use the  appBody template to define the layout for the entire app
   layoutTemplate: 'appBody',
@@ -44,6 +46,7 @@ Router.route('listsShow', {
       // Handle for launch screen defined in app-body.js
       dataReadyHold.release();
     }
+    this.next();
   },
   data: function () {
     return Lists.findOne(this.params._id);

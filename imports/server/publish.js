@@ -1,3 +1,5 @@
+import '../lib/collections.js';
+
 Meteor.publish('publicLists', function() {
   return Lists.find({userId: {$exists: false}});
 });
